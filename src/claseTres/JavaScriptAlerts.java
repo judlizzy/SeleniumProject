@@ -113,6 +113,8 @@ public class JavaScriptAlerts {
 		Wait(2);
 		driver.switchTo().alert().accept();//cancel
 		
+		driver.switchTo().defaultContent();
+		driver.switchTo().frame("iframeResult");
 		
 	}
 	
